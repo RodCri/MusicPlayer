@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: 'http://github.io/RodCri/MusicPlayer/'
+          path: 'https://github.com/RodCri/MusicPlayer/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
