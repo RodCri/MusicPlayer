@@ -30,26 +30,19 @@ let songIndex = 0;
 let isPlaying = false;
 
 function togglePlay() {
-  if (isPlaying) {
-    pauseMusic();
-  } else {
-    playMusic();
-  }
+  return isPlaying ? pauseMusic() : playMusic();
 }
 
 function playMusic() {
   isPlaying = true;
-  //playBtn.classList.replace("fa-play", "fa-pause");
-  // Set button hover title
+  songPlay.src = "../assets/stop.svg";
   songPlay.setAttribute("title", "Pause");
   music.play();
 }
 
 function pauseMusic() {
   isPlaying = false;
-  // Change pause button icon
-  //playBtn.classList.replace("fa-pause", "fa-play");
-  // Set button hover title
+  songPlay.src = "../assets/Play_fill.svg";
   songPlay.setAttribute("title", "Play");
   music.pause();
 }

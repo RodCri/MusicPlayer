@@ -79,6 +79,8 @@ body {
   gap: 30px;
 }
 .content .card .card__controls .card__play {
+  width: 52px;
+  height: 52px;
   background-color: #C93B76;
   border-radius: 50%;
   padding: 1rem;
@@ -86,6 +88,14 @@ body {
 }
 .content .card .card__controls .card__play:hover {
   box-shadow: 0 0 10px 0 #f94791;
+}
+.content .card .card__controls .card__prev, .content .card .card__controls .card__next {
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.content .card .card__controls .card__prev:hover, .content .card .card__controls .card__next:hover {
+  box-shadow: 0 0 10px 0 #4D5562;
 }
 
 /*# sourceMappingURL=style.css.map */

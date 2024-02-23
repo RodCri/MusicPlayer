@@ -75,6 +75,8 @@ body{
       color: #4D5562;
       gap: 30px;
       .card__play{
+        width: 52px;
+        height: 52px;
         background-color: v.$bg-btn;
         border-radius: 50%;
         padding: 1rem;
@@ -82,6 +84,14 @@ body{
         &:hover{
           box-shadow: 0 0 10px 0 v.$bg-btn-hover;
         }
+      }
+      .card__prev,.card__next{
+        padding: 1rem;
+        border-radius: 50%;
+        transition: all .3s ease;
+      }
+      .card__prev:hover,.card__next:hover{
+        box-shadow: 0 0 10px 0 #4D5562;
       }
     }
   }
