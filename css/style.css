@@ -55,6 +55,7 @@ body {
 }
 .content .card__progress .progress {
   background: #C93B76;
+  box-shadow: 0 0 10px 0 #f94791;
   height: 100%;
   width: 0%;
   border-radius: 5px;
@@ -81,6 +82,10 @@ body {
   background-color: #C93B76;
   border-radius: 50%;
   padding: 1rem;
+  transition: all 0.3s ease;
+}
+.content .card .card__controls .card__play:hover {
+  box-shadow: 0 0 10px 0 #f94791;
 }
 
 /*# sourceMappingURL=style.css.map */
